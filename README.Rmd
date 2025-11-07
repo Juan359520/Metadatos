@@ -28,14 +28,20 @@ El paquete incluye funciones para descargar, procesar y analizar datos meteorol�
 
 ---
 
-## 🧭 Instalación
+## ⚙️ Funciones principales  
 
-Podés instalar el paquete desde GitHub usando `devtools`:
+### 📋 `tabla_resumen_temperatura()`  
+🧮 Genera un **resumen estadístico completo** de la temperatura medida a 150 cm de altura.  
+Incluye:  
+- 🌡️ **Temperatura promedio**  
+- ❄️ **Temperatura mínima**  
+- 🔥 **Temperatura máxima**  
+- 📊 **Desviación estándar**  
+- 🧾 **Cantidad de observaciones válidas**
+
+Devuelve un **data frame** con los resultados, ideal para análisis comparativos entre estaciones.  
 
 ```r
-# Si no tenés devtools instalado:
-install.packages("devtools")
 
-# Instalar el paquete desde tu repositorio
-devtools::install_github("Juan359520/Metadatos")
+
 

@@ -15,12 +15,20 @@ meteorológicos de distintas estaciones.
 
 ------------------------------------------------------------------------
 
-## 🧭 Instalación
+## ⚙️ Funciones principales
 
-Podés instalar el paquete desde GitHub usando `devtools`:
+### 📋 `tabla_resumen_temperatura()`
 
-\`\`\`r \# Si no tenés devtools instalado: install.packages(“devtools”)
+🧮 Genera un **resumen estadístico completo** de la temperatura medida a
+150 cm de altura.  
+Incluye:  
+- 🌡️ **Temperatura promedio**  
+- ❄️ **Temperatura mínima**  
+- 🔥 **Temperatura máxima**  
+- 📊 **Desviación estándar**  
+- 🧾 **Cantidad de observaciones válidas**
 
-# Instalar el paquete desde tu repositorio
+Devuelve un **data frame** con los resultados, ideal para análisis
+comparativos entre estaciones.
 
-devtools::install_github(“Juan359520/Metadatos”)
+\`\`\`r
