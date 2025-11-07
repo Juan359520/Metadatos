@@ -33,15 +33,11 @@ El paquete incluye funciones para descargar, procesar y analizar datos meteorol�
 ### 📋 `tabla_resumen_temperatura()`  
 🧮 Genera un **resumen estadístico completo** de la temperatura medida a 150 cm de altura.  
 Incluye:  
-- 🌡️ **Temperatura promedio**  
-- ❄️ **Temperatura mínima**  
-- 🔥 **Temperatura máxima**  
-- 📊 **Desviación estándar**  
-- 🧾 **Cantidad de observaciones válidas**
+- 🌡️ **resumen_temperatura*  
 
-Devuelve un **data frame** con los resultados, ideal para análisis comparativos entre estaciones.  
 
-```r
+Devuelve un **data frame** con los resultados, ideal para análisis comparativos entre estaciones  
+
 
 
 

@@ -22,13 +22,7 @@ meteorológicos de distintas estaciones.
 🧮 Genera un **resumen estadístico completo** de la temperatura medida a
 150 cm de altura.  
 Incluye:  
-- 🌡️ **Temperatura promedio**  
-- ❄️ **Temperatura mínima**  
-- 🔥 **Temperatura máxima**  
-- 📊 **Desviación estándar**  
-- 🧾 **Cantidad de observaciones válidas**
+- 🌡️ \*\*resumen_temperatura\*
 
 Devuelve un **data frame** con los resultados, ideal para análisis
-comparativos entre estaciones.
-
-\`\`\`r
+comparativos entre estaciones
