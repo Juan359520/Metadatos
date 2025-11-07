@@ -1,0 +1,27 @@
+---
+title: "resumen_temperatura"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Ejemplo de uso: tabla_resumen_temperatura}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r}
+install.packages(c("rmarkdown", "knitr", "devtools"))
+```
+
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(Metadatos)
+```
+
+
+

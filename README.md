@@ -1,7 +1,26 @@
-# ⚠️ Paquete de Prueba
 
-Este paquete ha sido creado con fines **educativos y de práctica**.  
-No está pensado para ser utilizado en producción ni distribuido como paquete funcional.
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 
-Autor: Juan Brajkovic  
-Fecha: `r Sys.Date()`
+<!-- README generado automáticamente a partir de README.Rmd -->
+
+# Metadatos
+
+`Metadatos` es un paquete de prueba creado con fines **educativos y de
+práctica**.  
+Su objetivo es mostrar cómo crear, documentar y distribuir un paquete en
+R.
+
+El paquete incluye funciones para descargar, procesar y analizar datos
+meteorológicos de distintas estaciones.
+
+------------------------------------------------------------------------
+
+## 🧭 Instalación
+
+Podés instalar el paquete desde GitHub usando `devtools`:
+
+\`\`\`r \# Si no tenés devtools instalado: install.packages(“devtools”)
+
+# Instalar el paquete desde tu repositorio
+
+devtools::install_github(“Juan359520/Metadatos”)

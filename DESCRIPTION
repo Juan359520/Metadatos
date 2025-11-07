@@ -1,13 +1,20 @@
 Package: Metadatos
-Title: What the Package Does (One Line, Title Case)
+Title: DATOS METEOROLOGICOS 
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Juan", "Brajkovic", , "juanbrajkovic@egmail.com", role = c("aut", "cre"))
+Description: Crear resumenes de datos meteorlogicos rapido y facil.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
-URL: https://github.com/Juan359520/Metadatos
+URL: https://github.com/Juan359520/Metadatos, https://juan359520.github.io/Metadatos/
 BugReports: https://github.com/Juan359520/Metadatos/issues
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Imports: 
+    cli
