@@ -1,0 +1,11 @@
+utils::globalVariables(c(
+  "fecha",
+  "estacion",
+  "mes",
+  "temperatura_abrigo_150cm",
+  "temp_promedio",
+  "media",
+  "minimo",
+  "maximo",
+  "n"
+))

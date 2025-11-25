@@ -6,9 +6,6 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
-```{r}
-install.packages(c("rmarkdown", "knitr", "devtools"))
-```
 
 ---
 
@@ -19,9 +16,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-library(Metadatos)
-```
 
 
 
