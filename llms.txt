@@ -1,0 +1,38 @@
+# Metadatos
+
+`Metadatos` es un paquete de prueba creado con fines **educativos y de
+práctica**.  
+Su objetivo es mostrar cómo crear, documentar y distribuir un paquete en
+R.
+
+El paquete incluye funciones para descargar, procesar y analizar datos
+meteorológicos de distintas estaciones.
+
+------------------------------------------------------------------------
+
+## ⚙️ Funciones principales
+
+### 📋 `tabla_resumen_temperatura()`
+
+🧮 Genera un **resumen estadístico completo** de la temperatura medida a
+150 cm de altura.  
+Incluye:  
+- 🌡️ \*\*resumen_temperatura\*
+
+Devuelve un **data frame** con los resultados, ideal para análisis
+comparativos entre estaciones
+
+# Package index
+
+## All functions
+
+- [`centimetros_a_pulgadas()`](https://juan359520.github.io/Metadatos/reference/centimetros_a_pulgadas.md)
+  : Convierte pulgadas a centímetros
+- [`tabla_resumen_temperatura()`](https://juan359520.github.io/Metadatos/reference/tabla_resumen_temperatura.md)
+  : Tabla resumen de temperatura
+
+# Articles
+
+### All vignettes
+
+- [resumen_temperatura](https://juan359520.github.io/Metadatos/articles/resumen_temperatura.md):
