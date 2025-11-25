@@ -13,8 +13,15 @@ BugReports: https://github.com/Juan359520/Metadatos/issues
 Suggests: 
     knitr,
     rmarkdown,
-    testthat (>= 3.0.0)
+    testthat
 VignetteBuilder: knitr
 Config/testthat/edition: 3
 Imports: 
-    cli
+    cli,
+    dplyr,
+    ggplot2,
+    here,
+    lubridate
+Depends: 
+    R (>= 3.5)
+LazyData: true
