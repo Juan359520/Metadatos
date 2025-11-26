@@ -1,10 +1,12 @@
 Package: Metadatos
-Title: DATOS METEOROLOGICOS 
+Title: Herramientas para analizar datos de estaciones meteorológicas 
 Version: 0.0.0.9000
 Authors@R: 
     person("Juan", "Brajkovic", email = "juanbrajkovic@gmail.com",
            role = c("aut", "cre"))
-Description: Crear resumenes de datos meteorlogicos rapido y facil.
+Description:Proporciona funciones para descargar, procesar y resumir datos
+    de estaciones meteorológicas, calcular estadísticos de temperatura y
+    generar gráficos de temperatura mensual.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

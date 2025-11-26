@@ -3,6 +3,8 @@
 
 <!-- README generado automáticamente a partir de README.Rmd -->
 
+<img src="pkgdown/favicon/favicon-96x96.png" width="120" align="right">
+
 # Metadatos
 
 `Metadatos` es un paquete de prueba creado con fines **educativos y de
@@ -15,31 +17,24 @@ meteorológicos de distintas estaciones.
 
 ------------------------------------------------------------------------
 
-# Instalación
+# ⬇️ Instalación
 
 -install.packages(“devtools”) -devtools::load_all()
 
-## Como empezar a usarlo rapidamente
+## 👨‍💻 Como empezar a usarlo rapidamente
 
-\# Cargar el paquete library(Metadatos)
+Cargar el paquete ➡️ library(Metadatos)
 
-# Ver los datasets incluidos en el paquete
+Ver los datasets incluidos en el paquete ➡️ data(package = “Metadatos”)
 
-data(package = “Metadatos”)
+Cargar los metadatos ➡️ data(metadatos) head(metadatos)
 
-# Cargar los metadatos
+Cargar una estación ➡️ data(NH0046) head(NH0046)
 
-data(metadatos) head(metadatos)
+Calcular un resumen de temperatura ➡️ res \<-
+resumen_temperatura(NH0046)
 
-# Cargar una estación
-
-data(NH0046) head(NH0046)
-
-# Calcular un resumen de temperatura
-
-res \<- resumen_temperatura(NH0046)
-
-# Graficar la temperatura mensual
+# 📊 Graficar la temperatura mensual
 
 grafico_temperatura_mensual(res)
 
