@@ -10,6 +10,34 @@ meteorológicos de distintas estaciones.
 
 ------------------------------------------------------------------------
 
+# Instalación
+
+-install.packages(“devtools”) -devtools::load_all()
+
+## Como empezar a usarlo rapidamente
+
+\# Cargar el paquete library(Metadatos)
+
+# Ver los datasets incluidos en el paquete
+
+data(package = “Metadatos”)
+
+# Cargar los metadatos
+
+data(metadatos) head(metadatos)
+
+# Cargar una estación
+
+data(NH0046) head(NH0046)
+
+# Calcular un resumen de temperatura
+
+res \<- resumen_temperatura(NH0046)
+
+# Graficar la temperatura mensual
+
+grafico_temperatura_mensual(res)
+
 ## ⚙️ Funciones principales
 
 ### 📋 `tabla_resumen_temperatura()`
