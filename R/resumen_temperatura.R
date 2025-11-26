@@ -17,6 +17,7 @@
 #' # estaciones <- leer_estaciones()
 #' # tabla <- tabla_resumen_temperatura(estaciones)
 #' }
+
 tabla_resumen_temperatura <- function(lista_estaciones) {
 
   # ---- VALIDACIONES ----

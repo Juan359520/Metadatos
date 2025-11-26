@@ -18,9 +18,12 @@
 #'
 #' @examples
 #' \dontrun{
-#' # estaciones <- leer_estaciones()
-#' # tabla <- tabla_resumen_temperatura(estaciones)
+#' data(NH0046)
+#' data(NH0098)
+#' estaciones <- list(NH0046 = NH0046, NH0098 = NH0098)
+#' tabla_resumen_temperatura(estaciones)
 #' }
+
 tabla_resumen_temperatura <- function(lista_estaciones) {
 
   # ---- VALIDACIONES ----

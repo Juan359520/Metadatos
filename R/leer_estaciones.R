@@ -12,8 +12,10 @@
 #'
 #' @examples
 #' \dontrun{
-#' estaciones <- leer_estaciones()
+#' # Ejemplo de uso (requiere conexión a internet y archivo remoto)
+#' # estaciones <- leer_estaciones("ruta/a/carpeta")
 #' }
+
 leer_estaciones <- function(ruta_datos = here::here("datos")) {
 
   # ---- VALIDACIONES ----

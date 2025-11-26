@@ -20,6 +20,7 @@ directorio y los lee en una lista de data frames.
 }
 \examples{
 \dontrun{
-estaciones <- leer_estaciones()
+# Ejemplo de uso (requiere conexión a internet y archivo remoto)
+# estaciones <- leer_estaciones("ruta/a/carpeta")
 }
 }

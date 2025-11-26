@@ -13,9 +13,16 @@
 #'
 #' @examples
 #' \dontrun{
-#' grafico_temperatura_mensual(datos_clima,
-#'                             colores = c("red", "blue", "green"))
+#' # Usar una estación incluida en el paquete
+#' data(NH0046)
+#'
+#' # Graficar la temperatura mensual
+#' grafico_temperatura_mensual(
+#'   datos = NH0046,
+#'   colores = c("red", "blue", "green")
+#' )
 #' }
+
 grafico_temperatura_mensual <- function(datos, colores, titulo = "Temperatura") {
 
   # ---- VALIDACIONES ----

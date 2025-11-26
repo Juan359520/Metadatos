@@ -1,8 +1,11 @@
-#' Metadatos de estaciones meteorologicas
+#' Metadatos de estaciones meteorológicas
 #'
-#' Data frame con informacion descriptiva de las estaciones usadas
-#' en el paquete.
+#' Data frame con información descriptiva de las estaciones usadas en el paquete.
 #'
 #' @format Un data frame con X filas y Y columnas.
-#' @usage data(metadatos)
+#' @source Elaboración propia
+#'
+#' @examples
+#' data(metadatos)
+#' head(metadatos)
 "metadatos"

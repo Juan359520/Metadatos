@@ -1,20 +1,17 @@
 ---
-title: "resumen_temperatura"
+title: "Resumen de temperatura"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Ejemplo de uso: tabla_resumen_temperatura}
+  %\VignetteIndexEntry{Resumen de temperatura}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
----
-
-```{r, include = FALSE}
+```{r, include=FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
-```
 
 
 

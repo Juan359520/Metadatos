@@ -23,7 +23,13 @@ de datos y genera un grafico de lineas con puntos.
 }
 \examples{
 \dontrun{
-grafico_temperatura_mensual(datos_clima,
-                            colores = c("red", "blue", "green"))
+# Usar una estación incluida en el paquete
+data(NH0046)
+
+# Graficar la temperatura mensual
+grafico_temperatura_mensual(
+  datos = NH0046,
+  colores = c("red", "blue", "green")
+)
 }
 }

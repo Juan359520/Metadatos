@@ -2,7 +2,8 @@ Package: Metadatos
 Title: DATOS METEOROLOGICOS 
 Version: 0.0.0.9000
 Authors@R: 
-    person("Juan", "Brajkovic", , "juanbrajkovic@egmail.com", role = c("aut", "cre"))
+    person("Juan", "Brajkovic", email = "juanbrajkovic@gmail.com",
+           role = c("aut", "cre"))
 Description: Crear resumenes de datos meteorlogicos rapido y facil.
 License: MIT + file LICENSE
 Encoding: UTF-8
