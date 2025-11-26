@@ -9,14 +9,14 @@
 #'
 #' @return Una lista nombrada de data frames, uno por archivo descargado.
 #' @export
-#'
+leer_estaciones <- function(ruta_datos = here::here("datos"))
 #' @examples
 #' \dontrun{
 #' # Ejemplo de uso (requiere conexión a internet y archivo remoto)
 #' # estaciones <- leer_estaciones("ruta/a/carpeta")
 #' }
 
-leer_estaciones <- function(ruta_datos = here::here("datos")) {
+ {
 
   # ---- VALIDACIONES ----
 
