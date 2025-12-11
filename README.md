@@ -1,10 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<!-- README generado automáticamente a partir de README.Rmd -->
-
-<img src="pkgdown/favicon/favicon-96x96.png" width="120" align="right">
-
 # Metadatos
 
 `Metadatos` es un paquete de prueba creado con fines **educativos y de
