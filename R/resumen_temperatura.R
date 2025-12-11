@@ -43,6 +43,28 @@
 
   lista_estaciones <- lista_estaciones[es_df]
 
+  ##
+
+  # 3. Filtrar solo estaciones válidas: deben tener la columna de temperatura
+  col_req <- "temperatura_abrigo_150cm"
+
+  tiene_columnas <- vapply(
+    lista_estaciones,
+    function(x) is.data.frame(x) && all(col_req %in% names(x)),
+    logical(1)
+  )
+
+  estaciones <- lista_estaciones[tiene_columnas]
+
+  if (length(estaciones) == 0) {
+    cli::cli_abort(c(
+      "x" = "Ningún elemento de `lista_estaciones` tiene las columnas requeridas.",
+      "i" = "Cada estación debe incluir la columna `temperatura_abrigo_150cm`."
+    ))
+  }
+
+
+
   # ---- COMBINAR DATOS ----
 
   datos_combinados <- dplyr::bind_rows(lista_estaciones, .id = "estacion")
