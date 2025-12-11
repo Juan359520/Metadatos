@@ -67,7 +67,7 @@
 
   # ---- COMBINAR DATOS ----
 
-  datos_combinados <- dplyr::bind_rows(lista_estaciones, .id = "estacion")
+  datos_combinados <- dplyr::bind_rows(estaciones, .id = "estacion")
 
   columnas_req <- c("estacion", "temperatura_abrigo_150cm")
   faltan <- setdiff(columnas_req, names(datos_combinados))
