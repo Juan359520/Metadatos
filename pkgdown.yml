@@ -3,7 +3,7 @@ pkgdown: 2.2.0
 pkgdown_sha: ~
 articles:
   resumen_temperatura: resumen_temperatura.html
-last_built: 2025-11-26T19:49Z
+last_built: 2025-12-11T13:33Z
 urls:
   reference: https://juan359520.github.io/Metadatos/reference
   article: https://juan359520.github.io/Metadatos/articles

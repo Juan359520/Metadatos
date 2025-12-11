@@ -1,7 +1,5 @@
 # Metadatos
 
-![](pkgdown/favicon/favicon-96x96.png)
-
 `Metadatos` es un paquete de prueba creado con fines **educativos y de
 práctica**.  
 Su objetivo es mostrar cómo crear, documentar y distribuir un paquete en
