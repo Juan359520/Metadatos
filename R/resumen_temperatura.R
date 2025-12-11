@@ -1,8 +1,8 @@
-#' Tabla resumen de temperatura por estacion
+#'  Resumen de temperatura por estacion
 #'
 #' Esta funcion calcula estadísticas descriptivas de la variable
 #' \code{temperatura_abrigo_150cm} para una o mas estaciones y devuelve
-#' una tabla resumen por estación.
+#' un resumen por estación.
 #'
 #' @param lista_estaciones Una lista que contiene data frames con los
 #'   datos de las estaciones. Cada elemento debe tener, al menos, las
@@ -15,10 +15,10 @@
 #' @examples
 #' \dontrun{
 #' # estaciones <- leer_estaciones()
-#' # tabla <- tabla_resumen_temperatura(estaciones)
+#' # tabla <- resumen_temperatura(estaciones)
 #' }
 
-tabla_resumen_temperatura <- function(lista_estaciones) {
+ resumen_temperatura <- function(lista_estaciones) {
 
   # ---- VALIDACIONES ----
 
