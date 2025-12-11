@@ -2,12 +2,12 @@
 % Please edit documentation in R/leer_estaciones.R
 \name{leer_estaciones}
 \alias{leer_estaciones}
-\title{Descargar y leer datos de estaciones meteorologicas}
+\title{Descargar y leer datos de estaciones meteorológicas}
 \usage{
 leer_estaciones(ruta_datos = here::here("datos"))
 }
 \arguments{
-\item{ruta_datos}{Directorio donde se guardaran/leeran los archivos
+\item{ruta_datos}{Directorio donde se guardarán/leerán los archivos
 .csv. Por defecto se usa \code{here::here("datos")}.}
 }
 \value{
@@ -15,12 +15,6 @@ Una lista nombrada de data frames, uno por archivo descargado.
 }
 \description{
 Descarga archivos .csv con metadatos y datos de estaciones
-meteorologicas desde un repositorio en linea, los guarda en un
+meteorológicas desde un repositorio en línea, los guarda en un
 directorio y los lee en una lista de data frames.
-}
-\examples{
-\dontrun{
-# Ejemplo de uso (requiere conexión a internet y archivo remoto)
-# estaciones <- leer_estaciones("ruta/a/carpeta")
-}
 }

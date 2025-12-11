@@ -12,15 +12,13 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' {
 #' # Usar una estación incluida en el paquete
 #' data(NH0046)
 #'
 #' # Graficar la temperatura mensual
-#' grafico_temperatura_mensual(
-#'   datos = NH0046,
-#'   colores = c("red", "blue", "green")
-#' )
+#'
+#'
 #' }
 
 grafico_temperatura_mensual <- function(datos, colores, titulo = "Temperatura") {
@@ -78,7 +76,7 @@ grafico_temperatura_mensual <- function(datos, colores, titulo = "Temperatura") 
       group = estacion
     )
   ) +
-    ggplot2::geom_line(size = 1) +
+    ggplot2::geom_line(linewidth = 1) +
     ggplot2::geom_point(size = 2) +
     ggplot2::scale_color_manual(values = colores) +
     ggplot2::labs(

@@ -21,8 +21,11 @@ Esta funcion calcula estadísticas descriptivas de la variable
 un resumen por estación.
 }
 \examples{
-\dontrun{
-# estaciones <- leer_estaciones()
-# tabla <- resumen_temperatura(estaciones)
-}
+data("NH0046")
+data("NH0098")
+estaciones <- list(
+  NH0046 = NH0046,
+  NH0098 = NH0098
+)
+resumen_temperatura(estaciones)
 }

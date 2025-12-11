@@ -66,3 +66,27 @@ Devuelve un **data frame** con las siguientes columnas:
 
 Este resumen es ideal para realizar **comparaciones entre estaciones** o para utilizar como entrada en funciones de visualización.
 
+## 🧪 Ejemplo de uso con los datos incluidos en el paquete
+
+El paquete incluye varios conjuntos de datos reales de estaciones meteorológicas  
+(ej.: `NH0046`, `NH0098`). Estos datos pueden cargarse directamente con `data()`.
+
+El siguiente ejemplo muestra cómo generar un **resumen estadístico** para dos estaciones:
+
+```r
+# Cargar los datos incluidos en el paquete
+data(NH0046)
+data(NH0098)
+
+# Crear una lista con las estaciones
+estaciones <- list(
+  NH0046 = NH0046,
+  NH0098 = NH0098
+)
+
+# Calcular el resumen de temperatura
+resumen <- resumen_temperatura(estaciones)
+
+resumen
+
+

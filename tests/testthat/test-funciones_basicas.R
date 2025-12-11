@@ -1,13 +1,16 @@
-test_that("tabla_resumen_temperatura devuelve un data.frame", {
+test_that("resumen_temperatura devuelve un data.frame", {
+  data("NH0046")
+  data("NH0098")
 
-  # Crear el objeto estaciones usando la función existente
-  estaciones <- leer_estaciones()
+  estaciones <- list(
+    NH0046 = NH0046,
+    NH0098 = NH0098
+  )
 
-  # Ejecutar la función que queremos testear
   resultado <- resumen_temperatura(estaciones)
 
-  # Verificar que devuelve un data.frame
   expect_s3_class(resultado, "data.frame")
+  expect_true(all(c("estacion", "media", "minimo", "maximo", "n") %in% names(resultado)))
 })
 
 

@@ -9,34 +9,36 @@
 #'
 #' @return Una lista nombrada de data frames, uno por archivo descargado.
 #'
-#' @examples
-#' \dontrun{
-#' # Ejemplo de uso (requiere conexión a internet)
-#' estaciones <- leer_estaciones()
-#' }
 #'
 #' @export
 leer_estaciones <- function(ruta_datos = here::here("datos")) {
 
   # ---- VALIDACIONES ----
 
-  if (!is.character(ruta_datos) || length(ruta_datos) != 1L || is.na(ruta_datos)) {
+  # 1. Tipo correcto
+  if (!is.character(ruta_datos)) {
     cli::cli_abort(c(
-      "x" = "`ruta_datos` debe ser un string de longitud 1.",
-      "i" = paste0("Se recibió un objeto de clase: ", class(ruta_datos)[1])
+      "x" = "`ruta_datos` debe ser un string (vector de tipo character).",
+      "i" = paste0("Se recibio un objeto de clase: ", class(ruta_datos)[1])
     ))
   }
 
-  # crear carpeta si no existe
-  if (!dir.exists(ruta_datos)) {
-    dir.create(ruta_datos, recursive = TRUE, showWarnings = FALSE)
-    if (!dir.exists(ruta_datos)) {
-      cli::cli_abort(c(
-        "x" = "No se pudo crear el directorio indicado en `ruta_datos`.",
-        "i" = paste0("Ruta: ", ruta_datos)
-      ))
-    }
+  # 2. Longitud correcta
+  if (length(ruta_datos) != 1L) {
+    cli::cli_abort(c(
+      "x" = "`ruta_datos` debe tener longitud 1.",
+      "i" = paste0("Longitud recibida: ", length(ruta_datos))
+    ))
   }
+
+  # 3. No puede ser NA
+  if (is.na(ruta_datos)) {
+    cli::cli_abort(c(
+      "x" = "`ruta_datos` no puede ser NA.",
+      "i" = "Pasa una ruta valida, por ejemplo 'datos/'."
+    ))
+  }
+
 
   # ---- URLS DE LOS ARCHIVOS ----
   urls <- c(
@@ -60,7 +62,7 @@ leer_estaciones <- function(ruta_datos = here::here("datos")) {
     # si el archivo no existe, lo descargamos
     if (!file.exists(ruta)) {
       cli::cli_inform(c(
-        ">" = paste0("Descargando archivo para la estación ", nombre, "..."),
+        ">" = paste0("Descargando archivo para la estacion ", nombre, "..."),
         "i" = paste0("Guardando en: ", ruta)
       ))
 
@@ -74,8 +76,8 @@ leer_estaciones <- function(ruta_datos = here::here("datos")) {
       cli::cli_inform("Descarga completa.")
     } else {
       cli::cli_inform(c(
-        "i" = paste0("El archivo de la estación ", nombre,
-                     " ya existe. Se usará el archivo local.")
+        "i" = paste0("El archivo de la estacion ", nombre,
+                     " ya existe. Se usara el archivo local.")
       ))
     }
 
@@ -83,7 +85,7 @@ leer_estaciones <- function(ruta_datos = here::here("datos")) {
     datos[[nombre]] <- utils::read.csv(ruta)
 
     cli::cli_inform(c(
-      "v" = paste0("Lectura completa para la estación ", nombre, ".")
+      "v" = paste0("Lectura completa para la estacion ", nombre, ".")
     ))
   }
 

@@ -13,10 +13,13 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
-#' # estaciones <- leer_estaciones()
-#' # tabla <- resumen_temperatura(estaciones)
-#' }
+#' data("NH0046")
+#' data("NH0098")
+#' estaciones <- list(
+#'   NH0046 = NH0046,
+#'   NH0098 = NH0098
+#' )
+#' resumen_temperatura(estaciones)
 
  resumen_temperatura <- function(lista_estaciones) {
 
@@ -58,8 +61,8 @@
 
   if (length(estaciones) == 0) {
     cli::cli_abort(c(
-      "x" = "Ningún elemento de `lista_estaciones` tiene las columnas requeridas.",
-      "i" = "Cada estación debe incluir la columna `temperatura_abrigo_150cm`."
+      "x" = "Ningun elemento de `lista_estaciones` tiene las columnas requeridas.",
+      "i" = "Cada estacion debe incluir la columna `temperatura_abrigo_150cm`."
     ))
   }
 
