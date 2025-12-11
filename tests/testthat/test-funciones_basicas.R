@@ -4,7 +4,7 @@ test_that("tabla_resumen_temperatura devuelve un data.frame", {
   estaciones <- leer_estaciones()
 
   # Ejecutar la función que queremos testear
-  resultado <- tabla_resumen_temperatura(estaciones)
+  resultado <- resumen_temperatura(estaciones)
 
   # Verificar que devuelve un data.frame
   expect_s3_class(resultado, "data.frame")
