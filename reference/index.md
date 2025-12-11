@@ -15,7 +15,7 @@
 - [`grafico_temperatura_mensual()`](https://juan359520.github.io/Metadatos/reference/grafico_temperatura_mensual.md)
   : Grafico de temperatura promedio mensual por estacion
 - [`leer_estaciones()`](https://juan359520.github.io/Metadatos/reference/leer_estaciones.md)
-  : Descargar y leer datos de estaciones meteorologicas
+  : Descargar y leer datos de estaciones meteorológicas
 - [`metadatos`](https://juan359520.github.io/Metadatos/reference/metadatos.md)
   : Metadatos de estaciones meteorológicas
 - [`resumen_temperatura()`](https://juan359520.github.io/Metadatos/reference/resumen_temperatura.md)

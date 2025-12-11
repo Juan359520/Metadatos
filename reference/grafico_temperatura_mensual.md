@@ -31,14 +31,12 @@ Un objeto `ggplot` con el grafico de temperatura mensual.
 ## Examples
 
 ``` r
-if (FALSE) { # \dontrun{
+{
 # Usar una estación incluida en el paquete
 data(NH0046)
 
 # Graficar la temperatura mensual
-grafico_temperatura_mensual(
-  datos = NH0046,
-  colores = c("red", "blue", "green")
-)
-} # }
+
+
+}
 ```

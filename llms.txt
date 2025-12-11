@@ -54,6 +54,29 @@ Devuelve un **data frame** con las siguientes columnas:
 Este resumen es ideal para realizar **comparaciones entre estaciones** o
 para utilizar como entrada en funciones de visualización.
 
+## 🧪 Ejemplo de uso con los datos incluidos en el paquete
+
+El paquete incluye varios conjuntos de datos reales de estaciones
+meteorológicas  
+(ej.: `NH0046`, `NH0098`). Estos datos pueden cargarse directamente con
+[`data()`](https://rdrr.io/r/utils/data.html).
+
+El siguiente ejemplo muestra cómo generar un **resumen estadístico**
+para dos estaciones:
+
+\`\`\`r \# Cargar los datos incluidos en el paquete data(NH0046)
+data(NH0098)
+
+# Crear una lista con las estaciones
+
+estaciones \<- list( NH0046 = NH0046, NH0098 = NH0098 )
+
+# Calcular el resumen de temperatura
+
+resumen \<- resumen_temperatura(estaciones)
+
+resumen
+
 # Package index
 
 ## All functions
@@ -71,7 +94,7 @@ para utilizar como entrada en funciones de visualización.
 - [`grafico_temperatura_mensual()`](https://juan359520.github.io/Metadatos/reference/grafico_temperatura_mensual.md)
   : Grafico de temperatura promedio mensual por estacion
 - [`leer_estaciones()`](https://juan359520.github.io/Metadatos/reference/leer_estaciones.md)
-  : Descargar y leer datos de estaciones meteorologicas
+  : Descargar y leer datos de estaciones meteorológicas
 - [`metadatos`](https://juan359520.github.io/Metadatos/reference/metadatos.md)
   : Metadatos de estaciones meteorológicas
 - [`resumen_temperatura()`](https://juan359520.github.io/Metadatos/reference/resumen_temperatura.md)

@@ -26,8 +26,16 @@ observaciones validas por estacion.
 ## Examples
 
 ``` r
-if (FALSE) { # \dontrun{
-# estaciones <- leer_estaciones()
-# tabla <- resumen_temperatura(estaciones)
-} # }
+data("NH0046")
+data("NH0098")
+estaciones <- list(
+  NH0046 = NH0046,
+  NH0098 = NH0098
+)
+resumen_temperatura(estaciones)
+#> # A tibble: 2 × 5
+#>   estacion media minimo maximo     n
+#>   <chr>    <dbl>  <dbl>  <dbl> <int>
+#> 1 NH0046    17.3  -0.25   34.6 16782
+#> 2 NH0098    18.6 -17.4    37.4 23540
 ```
