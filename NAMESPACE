@@ -2,4 +2,4 @@
 
 export(grafico_temperatura_mensual)
 export(leer_estaciones)
-export(tabla_resumen_temperatura)
+export(resumen_temperatura)
