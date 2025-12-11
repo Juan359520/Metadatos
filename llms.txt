@@ -33,7 +33,7 @@ grafico_temperatura_mensual(res)
 
 ## ⚙️ Funciones principales
 
-### 📋 `tabla_resumen_temperatura()`
+### 📋 resumen_temperatura()\`
 
 🧮 Genera un **resumen estadístico completo** de la temperatura medida a
 150 cm de altura.  
