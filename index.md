@@ -33,12 +33,23 @@ grafico_temperatura_mensual(res)
 
 ## ⚙️ Funciones principales
 
-### 📋 resumen_temperatura()\`
+### `resumen_temperatura()`
 
-🧮 Genera un **resumen estadístico completo** de la temperatura medida a
-150 cm de altura.  
-Incluye:  
-- 🌡️ \*\*resumen_temperatura\*
+Genera un **resumen estadístico completo** de la temperatura medida a
+150 cm de altura para una o varias estaciones meteorológicas.
 
-Devuelve un **data frame** con los resultados, ideal para análisis
-comparativos entre estaciones
+Esta función recibe **una lista de data frames**, donde cada elemento
+corresponde a una estación e incluye al menos la columna:
+
+- `temperatura_abrigo_150cm`
+
+Devuelve un **data frame** con las siguientes columnas:
+
+- `estacion` — nombre asignado a cada estación en la lista  
+- `media` — temperatura media  
+- `minimo` — temperatura mínima  
+- `maximo` — temperatura máxima  
+- `n` — cantidad de observaciones válidas
+
+Este resumen es ideal para realizar **comparaciones entre estaciones** o
+para utilizar como entrada en funciones de visualización.
