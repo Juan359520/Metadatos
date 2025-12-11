@@ -63,8 +63,8 @@ comparativos entre estaciones
   : Descargar y leer datos de estaciones meteorologicas
 - [`metadatos`](https://juan359520.github.io/Metadatos/reference/metadatos.md)
   : Metadatos de estaciones meteorológicas
-- [`tabla_resumen_temperatura()`](https://juan359520.github.io/Metadatos/reference/tabla_resumen_temperatura.md)
-  : Tabla resumen de temperatura por estacion
+- [`resumen_temperatura()`](https://juan359520.github.io/Metadatos/reference/resumen_temperatura.md)
+  : Resumen de temperatura por estacion
 
 # Articles
 
